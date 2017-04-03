@@ -9,5 +9,7 @@ var berry4 = 0;
 
 
 $(document).ready(function() {
-  $("#goal-number").html(Math.floor(Math.random() * ))
+  $("#goal-number").html("Math.floor(Math.random() * 120) - 19);
+                         
 });
+
