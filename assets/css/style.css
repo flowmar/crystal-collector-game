@@ -21,27 +21,34 @@ body{
   background-color: rgba(47, 79, 79, .7);
   margin-top: 1%;
   text-shadow: 2px 2px 7px #FFF;
+  border-style: double groove;
+  border-width: 100%;
+  
 }
 
 .berry {
   border-color: black;
-  border-style: solid;
+  border-style: dotted;
   border-width: 4%;
   border-radius: 80%;
   float: left;
-  height: 15%;
+  height: 20%;
   width: 25%;
 }
 
 
 .wins-losses {
+  margin-top: 5%;
+background-color: white;
 text-align: center;
 font-weight: bolder;
 font-family: 'Macondo';
 font-size: 2em;
 color: crimson;
-outline: black;
-outline-style:
+text-shadow: 2px 1px 4px black;
+border-style: double groove;
+border-color: black;
+border-radius: 20%;
 }
 
 #goal-number-text {
@@ -60,7 +67,39 @@ outline-style:
 }
 
 .winner {
-  
+  font-size: 40px;
+  font-weight: bold;
+  color: #00ff00;
 }
 
-.loser{}
+.loser{
+  background-color: darkred;
+  color: whitesmoke;
+  text-align: center;
+}
+
+.current-number{
+  color: royalblue;
+ font-size: 150%;
+ font-weight: bolder;
+ text-align: center;
+ background-color: rgba(255, 16, 78, .9);
+ -webkit-border-radius: 19%;
+         border-radius: 19%;  
+ border-style: inset;
+ border-color: #000000;
+ border-width: 4px; 
+ text-shadow: 3px 5px 12px #000000;   
+}
+
+#goal-number {
+  margin-top: 4%;
+  border-width: 8px;
+  border-style: double groove;
+  border-color: #000000;
+  font-weight: bold;
+  font-size: 100%;
+  text-align: center;
+  background-color: whitesmoke;
+  text-shadow: 5px 2px 25px #000000;
+  }
