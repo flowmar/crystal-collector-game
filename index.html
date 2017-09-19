@@ -1,112 +1,160 @@
 <!DOCTYPE html>
 <html>
+
   <head>
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!--CSS reset with normalize.css-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css">
     <title>That's Not Berry Nice!</title>
 
     <!-- Bootstrap CSS -->
     <link href="https://fonts.googleapis.com/css?family=Macondo|Spirax" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
-    crossorigin="anonymous">
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.3.0/css/mdb.min.css">
+      crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.3.0/css/mdb.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
+
   </head>
-    <body>
-      <div class="container-fluid">
-      <div class="row banner-row">
-        <div class="col-md-12">
-          <img src="assets/images/berrynicebanner.png" alt="Banner for That's Not Berry Nice Game" class="banner img-responsive">
+
+  <body>
+
+    <!-- Banner  -->
+    <div class="container-fluid p-2 mb-0">
+      <div class="row">
+        <div class="col m-1">
+          <img src="assets/images/berrynicebanner.png" alt="Banner for That's Not Berry Nice Game" class="banner img-responsive hoverable">
         </div>
       </div>
 
-      <div class="row instructions-row">
-        <div class="col-md-2">
+      <!--Instructions -->
 
+      <div class="row mt-2">
+        <div class="col-2">
         </div>
-        <div class="col-md-8 instructions">
+
+        <div class="col-8 instructions border border-light p-4 hoverable">
           <p>
-            You are a hero: smart, strong, agile, well-hydrated<br>
-            and thoroughly versed in the sport of knitting.<br>
-          </p>
-          <p>
-            Your nemesis is an evil witch named "Kanye-ga West-ica".<br>
-            Moseying through the woods, on the way to defeat the demon spawn,<br>
-            You come upon a Capri Sun, and are instantly hit in the nostalgia...<br>
-            It's been about 20 years since you last had one.<br>
-          </p>
-            <strong>"DRINK ME!"</strong><br>
-            is scrawled across the silver pouch.<br>
-            So of course, down the hatch it goes.<br><br>
-            OH NO!<br>
-            You have been poisoned by the evil witch of the woods... That blows!!<br><br>
-            As you stumble through the woods, you come upon a garden of antidote berries.<br>
-            These berries contain chemical X, which, when consumed in the correct amount, will cure you!<br>
-            However... if you have too much, you will kick the bucket. <br>
+            You are a hero: smart, strong, agile, well-hydrated
+            <br> and thoroughly versed in the sport of knitting.
+            <br>
           </p>
           <p>
-          <em>Let's prevent you from an excruciatingly painful, torturous end!</em>
+            Your nemesis is an evil witch named "Kanye-ga West-ica".
+            <br> Moseying through the woods, on the way to defeat the demon spawn,
+            <br> You come upon a Capri Sun, and are instantly hit in the nostalgia...
+            <br> It's been about 20 years since you last had one.
+            <br>
           </p>
-          <p> There are 4 species of antidote berry in this garden.<br>
-           Each individual species contains a certain level of Chemical X.<br>
-           Click on a berry to eat it.<br>
-           Your task in this life-or-death game, is to reach the indicated level of chemical X, without going over it!
+          <p>
+            <br> So of course, down the hatch it goes.
+            <br>
+            <br> OH NO!
+            <br> You have been poisoned by the evil witch of the woods... That blows!!
+            <br>
+            <br> As you stumble through
+            <strong>"DRINK ME!"</strong>
+            <br> is scrawled across the silver pouch. the woods, you come upon a garden of antidote berries.
+            <br> These berries contain chemical X, which, when consumed in the correct amount, will cure you!
+            <br> However... if you have too much, you will kick the bucket.
+            <br>
+          </p>
+          <p>
+            <em>Let's prevent you from an excruciatingly painful, torturous end!</em>
+          </p>
+          <p> There are 4 species of antidote berry in this garden.
+            <br> Each individual species contains a certain level of Chemical X.
+            <br> Click on a berry to eat it.
+            <br> Your task in this life-or-death game, is to reach the indicated level of chemical X, without going over
+            it!
           </p>
         </div>
-        <div class="col-md-2">
+        <div class="col-2">
         </div>
       </div>
-      <div class="goal row">
-       <div class="col-md-5">
-       </div>
-       <div class="col-md-2 goal">
-         <div id="goal-number hoverable">(Goal Number)</div>
-       </div>
-       <div class="col-md-5">
-                </div>
-      </div>
-      <div class="buttons-row row">
-        <div class="col-md-1">
-        </div>
-        <div class="col-md-5 buttons">
-          <img src="assets/images/Berry1-cropped.png" alt="Berry Number 1" class="img-responsive berry btn" id="berry1">
-          <img src="assets/images/Berry2-cropped.png" alt="Berry Number 2" class="img-responsive berry btn" id="berry2">
-          <img src="assets/images/Berry3-cropped.png" alt="Berry Number 3" class="img-responsive berry btn" id="berry3">
-          <img src="assets/images/Berry4-cropped.png" alt="Berry Number 4" class="img-responsive berry btn" id="berry4">
 
-        </div>
-        <div class="col-md-1">
-
-        </div>
-        <div class="current-number col-md-3">
-
-        </div>
-        <div class="col-md-2">
-
+      <!--Start-->
+      <div class="start container-fluid mt-3">
+        <div class="row justify-content-center">
+          <button id="start" class="btn btn-lg btn-dark-green border border-dark">Start</button>
         </div>
       </div>
-        <div class="row">
-        <div class="col-md-4"></div>
-          <div class="col-md-4 wins-losses">
+
+      <!--Game-->
+      <div id="game" class="">
+
+        <!--Goal -->
+        <div class="row mt-2">
+          <div class="col-4">
+          </div>
+          <div class="col-4">
+            <div id="goal" class="hoverable p-3 z-depth-3">(Goal Number)</div>
+          </div>
+          <div class="col-4">
+          </div>
+        </div>
+
+        <!-- Buttons -->
+        <div class="row justify-content-center m-2 p-3">
+          <div class="col">
+          </div>
+          <div class="col-6 text-center border border-dark p-3 black animated tada">
+            <ul class="col list-inline">
+              <li class="list-inline-item animated fadeIn">
+                <button class="btn berry hoverable z-depth-3" id="berry1"></button>
+              </li>
+              <li class="list-inline-item animated fadeIn">
+                <button class="btn berry hoverable z-depth-3" id="berry2">
+              </button>
+              </li>
+              <li class="list-inline-item animated fadeIn">
+                <button class="btn berry hoverable z-depth-3" id="berry3">
+                  </button>
+              </li>
+              <li class="list-inline-item animated fadeIn">
+                <button class="btn berry hoverable z-depth-3" id="berry4"></button>
+              </li>
+            </ul>
+          </div>
+          <div class="col">
+          </div>
+
+          <!--Current Number-->
+
+          <div class="col-3 hoverable z-depth-3 p-3" id="current-number">
+          </div>
+
+          <div class="col-2">
+          </div>
+        </div>
+        <br>
+        <br>
+
+
+        <!-- Wins and Losses -->
+        <div class="row m-2 justify-content-center">
+          <div class="col-8 p-3 text-center text-white font-weight-bold hoverable z-depth-3 border border-light blue-gradient" id="stats">
             (Wins and Losses)
           </div>
-          <div class="col-md-4"></div>
         </div>
       </div>
-  <script src="https://use.fontawesome.com/e75d8c103f.js"></script>
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-  crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
-  crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
-  crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.3.0/js/mdb.min.js"></script>
+    </div>
 
-  <script src="assets/javascript/game.js"></script>
-</body>
+    <!--Footer-->
+    <footer class="jumbotron-fluid justify-content-center text-center mt-4 elegant-color-dark mb-0 text-white p-4 border border-light border-left-0 border-right-0 border-bottom-0">
+      <div class="col">&copy;2017 Omar Imam</div>
+    </footer>
+
+    <!--Scripts-->
+    <script src="https://use.fontawesome.com/e75d8c103f.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+      crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.3.0/js/mdb.min.js"></script>
+    <script src="assets/javascript/crystal.js"></script>
+  </body>
+
 </html>
